@@ -1,0 +1,103 @@
+/* === Base Styles === */
+html, body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+/* === Container === */
+.filter-container {
+  background: #f2f2f2;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+/* === Header === */
+.filter-header, .Sort-header {
+  background: #e6e6e6;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.filter-header span, .Sort-header span {
+  margin-left: 10px;
+  color: #444;
+}
+
+.back-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+}
+
+/* === Filter & Sort Options === */
+.sort-option,
+.filter-options,
+.filter-option
+{
+  background: #e0e0e0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  border-radius: 4px;
+  gap:10px;
+  display: flex;
+  align-items: center;
+  color: #444;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.filter-option input {
+  margin-right: 10px;
+}
+
+/* === Arrows === */
+.arrow {
+  font-size: 18px;
+  color: #333;
+ margin-left: auto;
+}
+
+/* === Confirm Button Section === */
+.C-Button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color:#e5e7eb;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* === Button Style === */
+.confirm-button {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  padding: 12px;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirm-button:hover {
+  background-color: #5b21b6;
+}

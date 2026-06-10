@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register as Seller</title>
+  <link rel="stylesheet" href="../CSS/sellerReg.css">
+</head>
+<body>
+  <div class="container">
+    <a href="#" onclick="history.back()" class="back">&larr;</a>
+    <h2>Register as a seller</h2>
+    <form action="sellerReg.php" method="POST">
+
+      <label for="seller_name">Name:</label>
+      <input type="text" name="seller_name" required>
+      
+<br>
+
+      <label for="location">Location:</label>
+      <input type="text" name="location" required>
+
+      <button type="submit" class="submit-btn">Register as a seller</button>
+    </form>
+  </div>
+</body>
+</html>

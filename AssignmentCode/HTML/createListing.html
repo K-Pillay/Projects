@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Listing</title>
+  <link rel="stylesheet" href="../CSS/createListing.css">
+</head>
+<body>
+  <div class="container">
+    <a href="myListings.html"  class="back">&larr;</a>
+    <h2>Create a Listing</h2>
+    <form action="createListing.php" method="POST" enctype="multipart/form-data">
+      <input type="text" name="product_name" placeholder="Product Name" required>
+      <input type="text" name="product_age" placeholder="Product Age" required>
+      <input type="text" name="price" placeholder="Price" required>
+      <input type="text" name="condition" placeholder="Condition" required>
+      <input type="text" name="payment_methods" placeholder="Payment Methods" required>
+      <input type="text" name="location" placeholder="Location" required>
+      <textarea name="description" placeholder="Description (optional)"></textarea>
+      <label>Upload up to 3 images</label>
+      <input type="file" name="images[]" multiple required>
+      <button type="submit">Create Listing</button>
+      <button type="reset" class="cancel">Cancel</button>
+    </form>
+  </div>
+</body>
+</html>

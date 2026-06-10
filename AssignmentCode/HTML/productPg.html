@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../CSS/productPg.css" />
+  <script src="../javascript/script.js"></script>
+</head>
+<body>
+
+  <div class = "backArrow">
+ <a href="viewAll.html" class="back-button" style="text-decoration: none; font-size: 20px; display: inline-block; margin: 10px;">
+  &#8592; Back to All Products
+  </div>
+</a>
+
+  <div class="container">
+    <div class="product-box">
+      <img src="../images/iphone.jpg" alt="Product Image" />
+
+      <div class="product-info">
+        <strong>Product Name:</strong> iPhone X<br/>
+        <strong>Price:</strong> R2500<br/>
+        <strong>Age:</strong> 2 years<br/>
+        <strong>Quantity:</strong> 1<br/><br/>
+
+        <strong>Seller Name:</strong> Con<br/>
+        <strong>Seller Details:</strong><br/>
+        <strong>Payment methods accepted:</strong> Cash, Card, Instant EFT
+      </div>
+
+      <p><strong>Product Description:</strong><br/> This is a pre-owned iPhone X in excellent condition. Includes charger and original box.</p>
+
+      <div class="buttons">
+        <button class="report" id= "reportbtn">Report Listing</button>
+        <button class="contact" id = "contactBtn">Contact Seller</button>
+      </div>
+    </div>
+  </div>
+
+  <div class = "button-container">
+  <button class="add-to-cart" id="addToCartBtn">Add to Cart</button>
+</div>
+
+<!--Javascript-->
+<script>
+  //Displays aftr reporting a listing
+    document.getElementById("reportBtn").addEventListener("click", function() {
+      alert("Thank you for reporting this listing. We'll review it shortly.");
+    });
+//Displays aftr clicking contact seller button
+    document.getElementById("contactBtn").addEventListener("click", function() {
+      alert("A message has been sent to the seller!");
+    });
+//Displays aftr addong to cart button
+    document.getElementById("addToCartBtn").addEventListener("click", function() {
+      alert("Item added to cart!");
+
+      //stores cart items in local storage, saving it if you exit the website
+      localStorage.setItem("cartItem", "Iphone X")
+    });
+    </script>
+
+</body>
+</html>

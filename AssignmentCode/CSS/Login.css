@@ -1,0 +1,99 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .login-page {
+    width: 90%;
+    max-width: 400px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+  }
+  
+  h1 {
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+    color: #1f1f1f;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  input[type="email"],
+  input[type="password"]{
+    border-color: #A78BFA;
+    box-shadow: 0 0 0 2px rgba(109, 40, 217, 0.3);
+  }
+  .password-wrapper {
+    position: relative;
+  }
+  
+  .password-wrapper .toggle {
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 13px;
+  }
+  
+  .form-options a {
+    color: #6d28d9;
+    text-decoration: none;
+  }
+  
+  button {
+    width: 100%;
+    margin-top: 1.5rem;
+    background: #6d28d9;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #5b21b6;
+  }
+  
+  .signup-prompt {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .signup a {
+    color: #6d28d9;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  

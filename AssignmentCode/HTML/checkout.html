@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="../CSS/checkout.css">
+</head>
+<body>
+  <div class="checkout-container">
+    <a href="#" onclick="history.back()" class="back">&larr;</a>
+    <h2>Checkout</h2>
+    <form action="checkout.php" method="POST">
+      <input type="text" name="fullname" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="text" name="address" placeholder="Shipping Address" required>
+      <input type="text" name="city" placeholder="City" required>
+      <input type="text" name="postal_code" placeholder="Postal Code" required>
+      <select name="payment_method" required>
+        <option value="Cash">Cash on Delivery</option>
+        <option value="Card">Credit/Debit Card</option>
+      </select>
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+</body>
+</html>
